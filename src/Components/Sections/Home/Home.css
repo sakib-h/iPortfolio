@@ -1,0 +1,58 @@
+.home {
+	height: 100vh;
+}
+
+.home .bgContainer {
+	position: relative;
+	height: 100%;
+	background-image: url(../../../Resources/img/hero-bg.jpg);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.home .bgContainer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(5, 13, 24, 0.3);
+}
+
+.home .bgContainer .textContainer {
+	position: absolute;
+	top: 40%;
+	transform: translateY(-40%);
+	padding-left: 200px;
+	z-index: 1;
+}
+.home h1 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+}
+.home p {
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+}
+.home .Typewriter__wrapper {
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+	margin: 0;
+	text-decoration: underline;
+	text-decoration-color: #149ddd;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 10px;
+}
+.home .Typewriter__cursor {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}

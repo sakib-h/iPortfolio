@@ -1,0 +1,112 @@
+.homePage .body {
+	position: relative;
+}
+
+.homePage .header {
+	width: 20%;
+	position: fixed;
+	height: 95%;
+	background-color: #040b14;
+	overflow-y: auto;
+}
+
+.homePage .header img {
+	width: 60%;
+	border-radius: 50%;
+	border: 8px solid #2c2f3f;
+	display: block;
+	margin: 15px auto;
+}
+
+.homePage .header h1 {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.homePage .header .icon {
+	font-size: 22px;
+	color: #ffffff;
+}
+
+.homePage .header .iconBg {
+	width: 40px;
+	height: 40px;
+	display: inline;
+	border-radius: 50%;
+	background-color: #212431;
+	cursor: pointer;
+	margin-top: 15px;
+	transition: all 0.3s;
+}
+
+.homePage .header .iconBg:hover,
+.homePage .header .iconBg:focus {
+	background-color: #149ddd;
+	text-align: center;
+	color: #ffffff;
+}
+
+.homePage .profile {
+	margin-bottom: 30px;
+}
+
+.homePage ul {
+	list-style-type: none;
+	padding: 0;
+}
+.homePage li {
+	margin-bottom: 30px;
+	width: fit-content;
+}
+
+.homePage a {
+	color: #a8a9b4;
+	font-size: 15px;
+	text-decoration: none;
+}
+.homePage .is-active,
+.homePage li:focus a,
+.homePage li:hover a {
+	color: #ffffff;
+}
+
+.homePage .header .icon {
+	color: #a8a9b4;
+}
+
+.homePage .section {
+	width: 80%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	scroll-snap-align: start;
+}
+
+.homePage footer {
+	width: 20%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: #040b14;
+	padding: 15px 0;
+}
+.homePage footer h5,
+.homePage footer h6 {
+	color: #eaebf0;
+	text-align: center;
+	margin: 0;
+}
+
+.homePage h5 {
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 5px;
+}
+.homePage h6 {
+	font-size: 13px;
+	font-weight: 400;
+}
+.homePage footer span {
+	color: #37b3ed;
+}
