@@ -1,0 +1,76 @@
+.resume h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	color: #173b6c;
+}
+.resume h2::after {
+	content: "";
+	width: 6%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 2px solid #149ddd;
+}
+
+.resume p {
+	color: #272829;
+}
+.timeLineItem::before {
+	content: none !important;
+}
+
+.resume h3 {
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #050d18;
+}
+.resume h4 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #050d18;
+	margin-bottom: 10px;
+}
+
+.resume em {
+	color: #272829;
+}
+
+.resume ul li {
+	color: #272829;
+	list-style-type: disc;
+	padding-bottom: 10px;
+}
+
+.css-v6mo1y-MuiTimelineDot-root {
+	background-color: transparent !important;
+	border-color: #1f5297 !important;
+	box-shadow: none !important;
+	margin: 0 !important;
+}
+
+.css-1ami7lv-MuiTimelineConnector-root {
+	background-color: #1f5297 !important;
+	margin: 0 !important;
+}
+.timeLineItem {
+	padding: 0 !important;
+}
+.resume .year {
+	width: fit-content;
+	font-size: 16px;
+	background: #e4edf9;
+	padding: 5px 15px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.css-18y2uza-MuiTypography-root-MuiTimelineContent-root {
+	padding: 0px 16px !important;
+}

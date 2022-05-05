@@ -182,7 +182,7 @@ const About = () => {
 						iste officiis commodi quidem hic quas.{" "}
 					</p>
 
-					<div className="skillBer row align-items-center">
+					<div className="skillBar row align-items-center">
 						<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 pe-3">
 							<div className="flex-column">
 								<div className="text d-flex justify-content-between">

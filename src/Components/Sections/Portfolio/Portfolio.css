@@ -1,0 +1,23 @@
+.portfolio {
+	background-color: #f5f8fd;
+}
+
+.portfolio h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	color: #173b6c;
+}
+.portfolio h2::after {
+	content: "";
+	width: 6%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 2px solid #149ddd;
+}
+.portfolio p {
+	color: #272829;
+}

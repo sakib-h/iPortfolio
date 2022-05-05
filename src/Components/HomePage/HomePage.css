@@ -51,11 +51,11 @@
 	margin-bottom: 30px;
 }
 
-.homePage ul {
+.navigation ul {
 	list-style-type: none;
 	padding: 0;
 }
-.homePage li {
+.navigation li {
 	margin-bottom: 30px;
 	width: fit-content;
 }
