@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
 import image1 from "../../../Resources/img/portfolio/portfolio-1.jpg";
 import image2 from "../../../Resources/img/portfolio/portfolio-2.jpg";
@@ -9,8 +9,10 @@ import image6 from "../../../Resources/img/portfolio/portfolio-6.jpg";
 import image7 from "../../../Resources/img/portfolio/portfolio-7.jpg";
 import image8 from "../../../Resources/img/portfolio/portfolio-8.jpg";
 import image9 from "../../../Resources/img/portfolio/portfolio-9.jpg";
-import { AiOutlinePlus } from "react-icons/ai";
+import { BiSearchAlt2 } from "react-icons/bi";
 import { BiLink } from "react-icons/bi";
+import ReactBnbGallery from "react-bnb-gallery";
+import { useNavigate } from "react-router-dom";
 
 const Portfolio = () => {
 	const portfolioItems = [
@@ -97,6 +99,7 @@ const Portfolio = () => {
 		},
 	];
 
+	// Filter elements from array
 	const appDesigns = portfolioItems.filter(
 		(portfolioItem) => portfolioItem.Category === "App Design"
 	);
@@ -108,7 +111,49 @@ const Portfolio = () => {
 	const webDesigns = portfolioItems.filter(
 		(portfolioItem) => portfolioItem.Category === "Web Design"
 	);
+	const [isOpen, setIsOpen] = useState(false);
+	const [currentImage, setCurrentImage] = useState();
 
+	// --> For All Element
+
+	const clickHandlerAll = (portfolioItem) => {
+		setIsOpen(true);
+		setCurrentImage(portfolioItem.projectImg);
+	};
+
+	// ! Change the index number of current image
+	const imageIndex = portfolioItems.map((portfolioItem) => {
+		return portfolioItem.projectImg;
+	});
+
+	// get the index of current image
+	const currentImageIndex = imageIndex.indexOf(currentImage);
+
+	// remove the element from array
+	const element = imageIndex.splice(currentImageIndex, 1)[0];
+
+	// insert the removed element at index 0
+	imageIndex.splice(0, 0, element);
+
+	const closeHandler = () => {
+		setIsOpen(false);
+	};
+
+	// Navigation Handler
+	const navigate = useNavigate();
+	const navigationHandlerAll = (portfolioItem) => {
+		sessionStorage.setItem("pageInfo", JSON.stringify(portfolioItem));
+		navigate("/portfolioDetails");
+	};
+
+	//  For All Element <--
+
+	// --> For App Element
+
+	const clickHandlerApp = (appDesign) => {};
+
+	const navigationHandlerApp = () => {};
+	//  For App Element <--
 	return (
 		<section className="portfolio">
 			<div className="content p-3">
@@ -200,11 +245,32 @@ const Portfolio = () => {
 												alt=""
 												className="img-fluid"
 											/>
+
 											<div className="links d-flex align-items-center">
-												<div className="w-50 text-center bg border-end">
-													<AiOutlinePlus className="icon" />
+												<div
+													className="w-50 text-center bg border-end"
+													onClick={() =>
+														clickHandlerAll(
+															portfolioItem
+														)
+													}
+												>
+													<BiSearchAlt2 className="icon " />
 												</div>
-												<div className="w-50 text-center bg ">
+												<ReactBnbGallery
+													show={isOpen}
+													photos={imageIndex}
+													onClose={closeHandler}
+												/>
+
+												<div
+													className="w-50 text-center bg "
+													onClick={() =>
+														navigationHandlerAll(
+															portfolioItem
+														)
+													}
+												>
 													<BiLink className="icon" />
 												</div>
 											</div>
@@ -228,7 +294,34 @@ const Portfolio = () => {
 												alt=""
 												className="img-fluid"
 											/>
-											<div className="links"></div>
+											<div className="links d-flex align-items-center">
+												<div
+													className="w-50 text-center bg border-end"
+													onClick={() =>
+														clickHandlerApp(
+															appDesign
+														)
+													}
+												>
+													<BiSearchAlt2 className="icon " />
+												</div>
+												<ReactBnbGallery
+													show={isOpen}
+													photos={imageIndex}
+													onClose={closeHandler}
+												/>
+
+												<div
+													className="w-50 text-center bg "
+													onClick={() =>
+														navigationHandlerApp(
+															appDesign
+														)
+													}
+												>
+													<BiLink className="icon" />
+												</div>
+											</div>
 										</div>
 									</div>
 								))}

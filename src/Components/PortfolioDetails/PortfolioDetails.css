@@ -1,0 +1,69 @@
+
+.portfolioDetails header {
+	background-color: #f9f9f9;
+	padding: 15px 45px;
+}
+.portfolioDetail section {
+	padding: 0 45px;
+}
+
+.portfolioDetails h4 {
+	margin: 0;
+}
+
+.portfolioDetails a {
+	font-size: 15px;
+	color: #149ddd;
+	text-decoration: none;
+}
+.portfolioDetails a:hover {
+	color: #37b3ed;
+}
+
+.portfolioDetails .carousel-indicators {
+	top: 100% !important;
+}
+
+.portfolioDetails .carousel-indicators [data-bs-target] {
+	width: 10px;
+	height: 10px;
+	margin: 10px 3px;
+	padding: 0;
+	text-indent: -999px;
+	cursor: pointer;
+	border: 1px solid #149ddd;
+	transition: opacity 0.6s ease;
+	border-radius: 50%;
+}
+
+.portfolioDetails .carousel-dark .carousel-indicators [data-bs-target] {
+	background-color: rgba(0, 0, 0, 0);
+}
+.portfolioDetails .carousel-indicators .active {
+	background-color: #149ddd !important;
+}
+
+.portfolioDetails h3 {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.portfolioDetails h2 {
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.portfolioDetails .projeCtInfo {
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+	margin-bottom: 30px;
+}
+.portfolioDetails p {
+	font-size: 15px;
+	color: #272829;
+	margin-bottom: 10px;
+}
