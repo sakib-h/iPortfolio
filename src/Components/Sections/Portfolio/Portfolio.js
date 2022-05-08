@@ -9,10 +9,10 @@ import image6 from "../../../Resources/img/portfolio/portfolio-6.jpg";
 import image7 from "../../../Resources/img/portfolio/portfolio-7.jpg";
 import image8 from "../../../Resources/img/portfolio/portfolio-8.jpg";
 import image9 from "../../../Resources/img/portfolio/portfolio-9.jpg";
-import { BiSearchAlt2 } from "react-icons/bi";
-import { BiLink } from "react-icons/bi";
-import ReactBnbGallery from "react-bnb-gallery";
-import { useNavigate } from "react-router-dom";
+import All from "./Tabs/All/All";
+import Apps from "./Tabs/App/Apps";
+import Card from "./Tabs/Card/Card";
+import Web from "./Tabs/Web/Web";
 
 const Portfolio = () => {
 	const portfolioItems = [
@@ -111,49 +111,7 @@ const Portfolio = () => {
 	const webDesigns = portfolioItems.filter(
 		(portfolioItem) => portfolioItem.Category === "Web Design"
 	);
-	const [isOpen, setIsOpen] = useState(false);
-	const [currentImage, setCurrentImage] = useState();
 
-	// --> For All Element
-
-	const clickHandlerAll = (portfolioItem) => {
-		setIsOpen(true);
-		setCurrentImage(portfolioItem.projectImg);
-	};
-
-	// ! Change the index number of current image
-	const imageIndex = portfolioItems.map((portfolioItem) => {
-		return portfolioItem.projectImg;
-	});
-
-	// get the index of current image
-	const currentImageIndex = imageIndex.indexOf(currentImage);
-
-	// remove the element from array
-	const element = imageIndex.splice(currentImageIndex, 1)[0];
-
-	// insert the removed element at index 0
-	imageIndex.splice(0, 0, element);
-
-	const closeHandler = () => {
-		setIsOpen(false);
-	};
-
-	// Navigation Handler
-	const navigate = useNavigate();
-	const navigationHandlerAll = (portfolioItem) => {
-		sessionStorage.setItem("pageInfo", JSON.stringify(portfolioItem));
-		navigate("/portfolioDetails");
-	};
-
-	//  For All Element <--
-
-	// --> For App Element
-
-	const clickHandlerApp = (appDesign) => {};
-
-	const navigationHandlerApp = () => {};
-	//  For App Element <--
 	return (
 		<section className="portfolio">
 			<div className="content p-3">
@@ -238,44 +196,10 @@ const Portfolio = () => {
 						>
 							<div className="cardsArea row">
 								{portfolioItems.map((portfolioItem) => (
-									<div className="cardArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-										<div className="cardContent">
-											<img
-												src={portfolioItem.projectImg}
-												alt=""
-												className="img-fluid"
-											/>
-
-											<div className="links d-flex align-items-center">
-												<div
-													className="w-50 text-center bg border-end"
-													onClick={() =>
-														clickHandlerAll(
-															portfolioItem
-														)
-													}
-												>
-													<BiSearchAlt2 className="icon " />
-												</div>
-												<ReactBnbGallery
-													show={isOpen}
-													photos={imageIndex}
-													onClose={closeHandler}
-												/>
-
-												<div
-													className="w-50 text-center bg "
-													onClick={() =>
-														navigationHandlerAll(
-															portfolioItem
-														)
-													}
-												>
-													<BiLink className="icon" />
-												</div>
-											</div>
-										</div>
-									</div>
+									<All
+										portfolioItems={portfolioItems}
+										portfolioItem={portfolioItem}
+									/>
 								))}
 							</div>
 						</div>
@@ -287,43 +211,10 @@ const Portfolio = () => {
 						>
 							<div className="cardsArea row">
 								{appDesigns.map((appDesign) => (
-									<div className="cardArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-										<div className="cardContent">
-											<img
-												src={appDesign.projectImg}
-												alt=""
-												className="img-fluid"
-											/>
-											<div className="links d-flex align-items-center">
-												<div
-													className="w-50 text-center bg border-end"
-													onClick={() =>
-														clickHandlerApp(
-															appDesign
-														)
-													}
-												>
-													<BiSearchAlt2 className="icon " />
-												</div>
-												<ReactBnbGallery
-													show={isOpen}
-													photos={imageIndex}
-													onClose={closeHandler}
-												/>
-
-												<div
-													className="w-50 text-center bg "
-													onClick={() =>
-														navigationHandlerApp(
-															appDesign
-														)
-													}
-												>
-													<BiLink className="icon" />
-												</div>
-											</div>
-										</div>
-									</div>
+									<Apps
+										appDesign={appDesign}
+										appDesigns={appDesigns}
+									/>
 								))}
 							</div>
 						</div>
@@ -335,16 +226,10 @@ const Portfolio = () => {
 						>
 							<div className="cardsArea row">
 								{cardDesigns.map((cardDesign) => (
-									<div className="cardArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-										<div className="cardContent">
-											<img
-												src={cardDesign.projectImg}
-												alt=""
-												className="img-fluid"
-											/>
-											<div className="links"></div>
-										</div>
-									</div>
+									<Card
+										cardDesign={cardDesign}
+										cardDesigns={cardDesigns}
+									/>
 								))}
 							</div>
 						</div>
@@ -356,16 +241,10 @@ const Portfolio = () => {
 						>
 							<div className="cardsArea row">
 								{webDesigns.map((webDesign) => (
-									<div className="cardArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-										<div className="cardContent">
-											<img
-												src={webDesign.projectImg}
-												alt=""
-												className="img-fluid"
-											/>
-											<div className="links"></div>
-										</div>
-									</div>
+									<Web
+										webDesign={webDesign}
+										webDesigns={webDesigns}
+									/>
 								))}
 							</div>
 						</div>

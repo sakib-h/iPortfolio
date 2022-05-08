@@ -7,7 +7,7 @@ import portfolioDetails3 from "../../Resources/img/portfolio/portfolio-details-3
 
 import "./PortfolioDetails.css";
 const PortfolioDetails = () => {
-	const info = JSON.parse(sessionStorage.getItem("pageInfo"));
+	const info = JSON.parse(sessionStorage.getItem("portfolioItem"));
 	const [index, setIndex] = useState(0);
 
 	const handleSelect = (selectedIndex, e) => {
