@@ -20,6 +20,7 @@
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
     "react-scrollspy-nav": "^1.2.4",
+    "swiper": "^8.1.4",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.0"
   },

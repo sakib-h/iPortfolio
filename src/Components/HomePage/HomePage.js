@@ -18,6 +18,7 @@ import Home from "../Sections/Home/Home";
 import About from "../Sections/About/About";
 import Resume from "../Sections/Resume/Resume";
 import Portfolio from "../Sections/Portfolio/Portfolio";
+import Services from "../Sections/Services/Services";
 
 const HomePage = () => {
 	return (
@@ -140,56 +141,7 @@ const HomePage = () => {
 						<Portfolio />
 					</section>
 					<section id="services">
-						<h3>Services</h3>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. At tempore blanditiis eius aliquid alias sunt
-							debitis laudantium unde obcaecati quae nisi nobis
-							quasi, fugit laborum, quis consequatur error minus
-							tenetur! Quidem recusandae exercitationem, provident
-							voluptate reiciendis veniam explicabo accusamus quam
-							quos quis rerum esse ad soluta porro error. Odio ad
-							distinctio ex corporis quasi quidem sapiente,
-							voluptatum quibusdam. Aspernatur nemo laborum rerum
-							nobis nostrum cum accusantium voluptas nulla non
-							autem, veniam inventore eius accusamus architecto
-							voluptatum obcaecati, ullam id! Quibusdam excepturi
-							hic suscipit tempore aut provident? Distinctio,
-							veniam recusandae? Obcaecati, nemo labore recusandae
-							commodi vero sit architecto repellat quam facere
-							quae ea quas esse temporibus magnam natus quis ut
-							aut asperiores praesentium accusamus consequuntur
-							ullam tempora magni assumenda. Quasi quod aperiam
-							soluta minus cumque! Inventore aspernatur
-							perferendis blanditiis. Aliquid placeat quo corporis
-							officia necessitatibus tenetur eos repudiandae. Nam
-							dignissimos aliquam maxime iure voluptates!
-							Architecto quos, iste quidem velit optio libero
-							dolor dolore eveniet tempora, odit minima
-							consequuntur sapiente ut quaerat recusandae minus,
-							quae soluta quas ipsa temporibus numquam ad?
-							Pariatur quis praesentium saepe harum minus at cum
-							repellat! Necessitatibus quo inventore ab, dolore
-							odio eos minus facere? Accusamus magni quia quisquam
-							consequatur ipsum quibusdam corporis qui aliquam in
-							rerum amet tempore mollitia sapiente magnam non aut
-							ex dolor, deserunt voluptatem perferendis ad. Amet
-							et, quos quia doloremque ducimus quisquam animi
-							voluptate id ipsa quibusdam? Quis odit nihil nobis
-							unde commodi distinctio, est laboriosam voluptas,
-							inventore perferendis excepturi repudiandae cumque.
-							Quae reprehenderit voluptate quasi quam? Nisi
-							adipisci eius nemo esse laboriosam vero neque
-							corporis praesentium distinctio sint? Adipisci non
-							molestias mollitia. Laudantium, nesciunt quisquam.
-							Nemo facilis quod, est deleniti distinctio doloribus
-							reprehenderit. Quos, deleniti nobis iure
-							repellendus, fugit qui impedit sequi eius fuga id
-							assumenda omnis saepe? Cum officiis facilis
-							repellendus excepturi vero possimus, labore
-							explicabo iusto dolor inventore. Asperiores,
-							sapiente.
-						</p>
+						<Services />
 					</section>
 					<section id="contact">
 						<h3>Contact</h3>
