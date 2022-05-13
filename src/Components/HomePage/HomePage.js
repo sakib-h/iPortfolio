@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./HomePage.css";
 import profileImage from "../../Resources/img/profile-img.jpg";
 import { FaTwitter } from "react-icons/fa";
@@ -6,7 +6,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-
 import ScrollspyNav from "react-scrollspy-nav";
 import { AiOutlineHome } from "react-icons/ai";
 import { IoPersonOutline } from "react-icons/io5";
@@ -14,14 +13,17 @@ import { IoDocumentOutline } from "react-icons/io5";
 import { FaRegAddressCard } from "react-icons/fa";
 import { BiServer } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import Home from "../Sections/Home/Home";
-import About from "../Sections/About/About";
-import Resume from "../Sections/Resume/Resume";
-import Portfolio from "../Sections/Portfolio/Portfolio";
-import Services from "../Sections/Services/Services";
-import Contact from "../Sections/Contact/Contact";
+import Home from "../../Components/Sections/Home/Home";
+import About from "../../Components/Sections/About/About";
+import Resume from "../../Components/Sections/Resume/Resume";
+import Portfolio from "../../Components/Sections/Portfolio/Portfolio";
+import Services from "../../Components/Sections/Services/Services";
+import Contact from "../../Components/Sections/Contact/Contact";
 
 const HomePage = () => {
+	const homeRef = useRef();
+	const aboutRef = useRef();
+
 	return (
 		<div class="homePage">
 			<div className="body d-flex justify-content-between">
@@ -68,7 +70,7 @@ const HomePage = () => {
 									"services",
 									"contact",
 								]}
-								offset={100}
+								offset={250}
 								activeNavClass="is-active"
 								scrollDuration="100"
 								headerBackground="true"
@@ -130,9 +132,14 @@ const HomePage = () => {
 						</div>
 					</header>
 				</div>
-				<div className="section" id="home">
+				<div className="section" id="home" ref={homeRef}>
 					<Home />
-					<section id="about">
+
+					<section
+						id="about"
+						className="animate__animated animate__fadeInUpBig"
+						ref={aboutRef}
+					>
 						<About />
 					</section>
 					<section id="resume">

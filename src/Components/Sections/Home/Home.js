@@ -3,7 +3,7 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 const Home = () => {
 	return (
-		<section className="home">
+		<section className="home " data-aos="fade-up">
 			<div className="bgContainer">
 				<div className="textContainer">
 					<h1>Sakib Hasan</h1>

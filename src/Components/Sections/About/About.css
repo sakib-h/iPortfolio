@@ -32,6 +32,7 @@
 
 .about {
 	margin-bottom: 80px;
+	overflow-x: hidden;
 }
 
 .facts .factsIcon {
@@ -79,11 +80,14 @@
 	height: 10px;
 	transition: 0.9s;
 	background-color: #149ddd;
+	animation: slideInLeft;
+	animation-duration: 2s;
 }
 
 .skills {
 	background-color: #f5f8fd;
 	padding: 50px 0;
+	overflow: hidden;
 }
 
 .skills .skillBar {
