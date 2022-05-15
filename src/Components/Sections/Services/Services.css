@@ -34,15 +34,20 @@
 	height: 50px;
 	width: 50px;
 	background-color: #149ddd;
+	border: 1px solid #149ddd;
+	transition: 0.4s;
+	transition-timing-function: ease-in-out;
 	border-radius: 50%;
 }
 
 .service:hover .icon {
 	color: #149ddd;
 }
+
 .service:hover .iconBg {
 	background: #fff;
-	border: 1px solid #149ddd;
+	transition: 0.4s;
+	transition-timing-function: ease-in-out;
 }
 
 .services h4 {

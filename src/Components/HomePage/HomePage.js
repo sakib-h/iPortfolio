@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./HomePage.css";
 import profileImage from "../../Resources/img/profile-img.jpg";
-import { FaTwitter } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaSkype } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import ScrollspyNav from "react-scrollspy-nav";
 import { AiOutlineHome } from "react-icons/ai";
@@ -21,9 +21,6 @@ import Services from "../../Components/Sections/Services/Services";
 import Contact from "../../Components/Sections/Contact/Contact";
 
 const HomePage = () => {
-	const homeRef = useRef();
-	const aboutRef = useRef();
-
 	return (
 		<div class="homePage">
 			<div className="body d-flex justify-content-between">
@@ -40,21 +37,60 @@ const HomePage = () => {
 							/>
 							<h1 className="text-center">Sakib Hasan</h1>
 							<div className="socialIcon d-flex justify-content-around">
-								<div className="iconBg d-flex justify-content-center align-items-center">
-									<FaTwitter className="icon " />
-								</div>
-								<div className="iconBg d-flex justify-content-center align-items-center">
-									<FaFacebookF className="icon" />
-								</div>
-								<div className="iconBg d-flex justify-content-center align-items-center">
-									<FaInstagram className="icon" />
-								</div>
-								<div className="iconBg d-flex justify-content-center align-items-center">
-									<FaSkype className="icon" />
-								</div>
-								<div className="iconBg d-flex justify-content-center align-items-center">
-									<FaLinkedinIn className="icon" />
-								</div>
+								<a
+									href="https://github.com/sakib-h"
+									rel="noreferrer"
+									target="_blank"
+									title="github.com/sakib-h"
+								>
+									<div className="iconBg d-flex justify-content-center align-items-center">
+										<FiGithub className="icon " />
+									</div>
+								</a>
+
+								<a
+									href="https://www.facebook.com/info.sakib.h"
+									rel="noreferrer"
+									target="_blank"
+									title="@info.sakib.h"
+								>
+									<div className="iconBg d-flex justify-content-center align-items-center">
+										<FaFacebookF className="icon" />
+									</div>
+								</a>
+
+								<a
+									href="https://www.instagram.com/__sakibhasan"
+									rel="noreferrer"
+									target="_blank"
+									title="@__sakibhasan"
+								>
+									<div className="iconBg d-flex justify-content-center align-items-center">
+										<FaInstagram className="icon" />
+									</div>
+								</a>
+
+								<a
+									href="https://twitter.com/Sakib_365"
+									rel="noreferrer"
+									target="_blank"
+									title="@Sakib_365"
+								>
+									<div className="iconBg d-flex justify-content-center align-items-center">
+										<BsTwitter className="icon" />
+									</div>
+								</a>
+
+								<a
+									href="https://www.linkedin.com/in/abdullah-al-sakib"
+									rel="noreferrer"
+									target="_blank"
+									title="linkedin.com/in/abdullah-al-sakib"
+								>
+									<div className="iconBg d-flex justify-content-center align-items-center">
+										<FaLinkedinIn className="icon" />
+									</div>
+								</a>
 							</div>
 						</div>
 						{/* Profile end*/}
@@ -132,13 +168,12 @@ const HomePage = () => {
 						</div>
 					</header>
 				</div>
-				<div className="section" id="home" ref={homeRef}>
+				<div className="section" id="home">
 					<Home />
 
 					<section
 						id="about"
 						className="animate__animated animate__fadeInUpBig"
-						ref={aboutRef}
 					>
 						<About />
 					</section>

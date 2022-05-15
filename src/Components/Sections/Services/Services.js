@@ -29,7 +29,7 @@ const Services = () => {
 					impedit suscipit alias ea. Quia fugiat sit in iste officiis
 					commodi quidem hic quas.{" "}
 				</p>
-				<div className="serviceArea row">
+				<div className="serviceArea row" data-aos="fade-up">
 					<div className="service col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4 d-flex justify-content-between">
 						<div className="col-3 col-sm-3  col-md-3 col-lg-3 col-xl-3 col-xxl-3 mb-3 iconBg ">
 							<BsBriefcase className="icon " />
@@ -123,7 +123,7 @@ const Services = () => {
 					</p>
 				</div>
 
-				<div className="slider ">
+				<div className="slider " data-aos="fade-up">
 					<Swiper
 						slidesPerView={3}
 						spaceBetween={30}
@@ -137,7 +137,7 @@ const Services = () => {
 						grabCursor={true}
 						speed={800}
 					>
-						<SwiperSlide className>
+						<SwiperSlide>
 							<div className="quotes">
 								<p className="text-center">
 									<ImQuotesLeft className="quote quote-left" />

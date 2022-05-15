@@ -18,7 +18,7 @@ const Resume = () => {
 				Quia fugiat sit in iste officiis commodi quidem hic quas.{" "}
 			</p>
 
-			<div className="resumeArea row">
+			<div className="resumeArea row" data-aos="fade-up" s>
 				<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-2">
 					<h3>Summary</h3>
 					<Timeline className="timeLine">

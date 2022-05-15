@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Portfolio.css";
 import image1 from "../../../Resources/img/portfolio/portfolio-1.jpg";
 import image2 from "../../../Resources/img/portfolio/portfolio-2.jpg";
@@ -13,7 +13,6 @@ import All from "./Tabs/All/All";
 import Apps from "./Tabs/App/Apps";
 import Card from "./Tabs/Card/Card";
 import Web from "./Tabs/Web/Web";
-
 const Portfolio = () => {
 	const portfolioItems = [
 		{
@@ -124,7 +123,7 @@ const Portfolio = () => {
 					impedit suscipit alias ea. Quia fugiat sit in iste officiis
 					commodi quidem hic quas.{" "}
 				</p>
-				<div className="portfolioArea">
+				<div className="portfolioArea" data-aos="fade-up">
 					<ul
 						class="nav nav-pills mb-3 justify-content-center"
 						id="pills-tab"
@@ -194,7 +193,7 @@ const Portfolio = () => {
 							role="tabpanel"
 							aria-labelledby="pills-all-tab"
 						>
-							<div className="cardsArea row">
+							<div className="cardsArea row animate__animated animate__zoomIn">
 								{portfolioItems.map((portfolioItem) => (
 									<All
 										portfolioItems={portfolioItems}
@@ -209,9 +208,10 @@ const Portfolio = () => {
 							role="tabpanel"
 							aria-labelledby="pills-app-tab"
 						>
-							<div className="cardsArea row">
+							<div className="cardsArea row animate__animated animate__zoomIn">
 								{appDesigns.map((appDesign) => (
 									<Apps
+										
 										appDesign={appDesign}
 										appDesigns={appDesigns}
 									/>
@@ -224,7 +224,7 @@ const Portfolio = () => {
 							role="tabpanel"
 							aria-labelledby="pills-card-tab"
 						>
-							<div className="cardsArea row">
+							<div className="cardsArea row animate__animated animate__zoomIn">
 								{cardDesigns.map((cardDesign) => (
 									<Card
 										cardDesign={cardDesign}
@@ -239,7 +239,7 @@ const Portfolio = () => {
 							role="tabpanel"
 							aria-labelledby="pills-web-tab"
 						>
-							<div className="cardsArea row">
+							<div className="cardsArea row animate__animated animate__zoomIn">
 								{webDesigns.map((webDesign) => (
 									<Web
 										webDesign={webDesign}

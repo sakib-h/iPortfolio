@@ -1,4 +1,4 @@
-import React, { createRef, useRef, useState } from "react";
+import React, { useState } from "react";
 import image from "../../../Resources/img/profile-img.jpg";
 import "./About.css";
 import CountUp from "react-countup";
@@ -7,8 +7,8 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { BsJournalRichtext } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
-import { ProgressBar, Spinner } from "react-bootstrap";
 import VisibilitySensor from "react-visibility-sensor";
+import { ProgressBar } from "react-bootstrap";
 
 const About = () => {
 	return (
@@ -132,7 +132,7 @@ const About = () => {
 					commodi quidem hic quas.{" "}
 				</p>
 
-				<VisibilitySensor scrollCheck={true}>
+				<VisibilitySensor partialVisibility={true}>
 					{({ isVisible }) => (
 						<div>
 							{isVisible ? (
@@ -163,7 +163,7 @@ const About = () => {
 											<CountUp
 												start={0}
 												end={521}
-												duration={1}
+												duration={1.5}
 											/>
 											<span id="counter" />
 											<h5>Projects </h5>
@@ -212,15 +212,14 @@ const About = () => {
 				<div className="content p-3">
 					<h2>Skills</h2>
 					<p>
-						{" "}
 						Magnam dolores commodi suscipit. Necessitatibus eius
 						consequatur ex aliquid fuga eum quidem. Sit sint
 						consectetur velit. Quisquam quos quisquam cupiditate. Et
 						nemo qui impedit suscipit alias ea. Quia fugiat sit in
-						iste officiis commodi quidem hic quas.{" "}
+						iste officiis commodi quidem hic quas.
 					</p>
 
-					<VisibilitySensor>
+					<VisibilitySensor partialVisibility={true}>
 						{({ isVisible }) => (
 							<div>
 								{isVisible ? (
@@ -235,7 +234,10 @@ const About = () => {
 													<small>90%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={90} />
+													<ProgressBar
+														now={90}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -246,7 +248,10 @@ const About = () => {
 													<small>85%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={85} />
+													<ProgressBar
+														now={85}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -258,7 +263,10 @@ const About = () => {
 													<small>82%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={82} />
+													<ProgressBar
+														now={82}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -269,7 +277,10 @@ const About = () => {
 													<small>75%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={75} />
+													<ProgressBar
+														now={75}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -281,7 +292,10 @@ const About = () => {
 													<small>90%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={90} />
+													<ProgressBar
+														now={90}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -292,7 +306,10 @@ const About = () => {
 													<small>70%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={70} />
+													<ProgressBar
+														now={70}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -304,7 +321,10 @@ const About = () => {
 													<small>80%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={80} />
+													<ProgressBar
+														now={80}
+														animated
+													/>
 												</div>
 											</div>
 										</div>
@@ -315,13 +335,18 @@ const About = () => {
 													<small>90%</small>
 												</div>
 												<div className="bar">
-													<ProgressBar now={90} />
+													<ProgressBar
+														animated
+														now={90}
+													/>
 												</div>
 											</div>
 										</div>
 									</div>
 								) : (
-									<span className="opacity-0">Hi</span>
+									<span style={{ opacity: 0 }}>
+										Invisible
+									</span>
 								)}
 							</div>
 						)}

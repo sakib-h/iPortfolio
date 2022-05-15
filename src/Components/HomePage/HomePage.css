@@ -47,6 +47,10 @@
 	color: #ffffff;
 }
 
+.homePage .header a:focus-visible {
+	outline: none;
+}
+
 .homePage .profile {
 	margin-bottom: 30px;
 }
@@ -60,7 +64,7 @@
 	width: fit-content;
 }
 
-.homePage a {
+.homePage li > a {
 	color: #a8a9b4;
 	font-size: 15px;
 	text-decoration: none;
@@ -71,7 +75,7 @@
 	color: #ffffff;
 }
 
-.homePage .header .icon {
+.homePage .navigation .icon {
 	color: #a8a9b4;
 }
 

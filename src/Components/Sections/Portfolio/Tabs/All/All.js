@@ -43,7 +43,7 @@ const All = ({ portfolioItem, portfolioItems }) => {
 	};
 	return (
 		<div className="all cardArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-4">
-			<div className="cardContent">
+			<div className="cardContent ">
 				<img
 					src={portfolioItem.projectImg}
 					alt=""

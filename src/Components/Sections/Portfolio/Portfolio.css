@@ -40,8 +40,13 @@
 	background-color: #173b6c;
 }
 
+.portfolio .cardsArea {
+	animation-duration: 0.7s;
+}
+
 .portfolio .cardContent {
 	position: relative;
+	overflow: hidden;
 }
 
 .portfolio .cardContent:hover::before {
@@ -53,6 +58,8 @@
 	right: 0;
 	background-color: rgba(255, 255, 255, 0.5);
 	z-index: 1;
+	animation: fadeInUp;
+	animation-duration: 0.3s;
 	box-sizing: border-box;
 }
 
@@ -68,6 +75,8 @@
 }
 .portfolio .cardContent:hover .links {
 	opacity: 1;
+	animation: fadeInUp;
+	animation-duration: 0.5s;
 }
 
 .portfolio .icon {

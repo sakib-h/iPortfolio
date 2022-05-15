@@ -1,3 +1,12 @@
+.aboutPage {
+	margin-bottom: 40px;
+}
+
+.about {
+	margin-bottom: 40px;
+	overflow-x: hidden;
+}
+
 .aboutPage h2 {
 	font-size: 32px;
 	font-weight: bold;
@@ -30,9 +39,8 @@
 	color: #149ddd;
 }
 
-.about {
-	margin-bottom: 80px;
-	overflow-x: hidden;
+.facts {
+	margin-bottom: 40px;
 }
 
 .facts .factsIcon {
@@ -62,8 +70,10 @@
 	padding: 0;
 }
 
-.facts {
-	margin-bottom: 80px;
+.skills {
+	background-color: #f5f8fd;
+	padding: 40px 0;
+	overflow: hidden;
 }
 
 .skills small {
@@ -82,12 +92,6 @@
 	background-color: #149ddd;
 	animation: slideInLeft;
 	animation-duration: 2s;
-}
-
-.skills {
-	background-color: #f5f8fd;
-	padding: 50px 0;
-	overflow: hidden;
 }
 
 .skills .skillBar {
