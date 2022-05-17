@@ -55,6 +55,26 @@
 	margin-bottom: 30px;
 }
 
+.homePage .icon {
+	font-size: 22px;
+	color: #ffffff;
+}
+.navbarToggler {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	background-color: #149ddd;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-right: 15px;
+	opacity: 0;
+	transition: 0.4s;
+	z-index: 10000;
+}
+
 .navigation ul {
 	list-style-type: none;
 	padding: 0;
@@ -113,4 +133,115 @@
 }
 .homePage footer span {
 	color: #37b3ed;
+}
+
+/* media query for tablet*/
+@media (max-width: 1280px) {
+	.homePage .header {
+		width: 25%;
+	}
+	.homePage .section {
+		width: 75%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		scroll-snap-align: start;
+	}
+
+	.homePage footer {
+		width: 25%;
+		z-index: 10;
+	}
+}
+
+@media (max-width: 1080px) {
+	.navbarToggler {
+		opacity: 1;
+		transition: 0.4s;
+	}
+	.homePage .header {
+		transition: 0.4s;
+		transform: translateX(-100%);
+		width: 30%;
+		z-index: 10;
+	}
+
+	.homePage footer {
+		transition: 0.4s;
+		transform: translateX(-100%);
+		width: 30%;
+		z-index: 10;
+	}
+
+	.homePage .active {
+		transition: 0.4s;
+		transform: translateX(0%);
+	}
+
+	.homePage .section {
+		width: 100%;
+		scroll-snap-align: start;
+	}
+}
+
+@media (max-width: 870px) {
+	.homePage .header {
+		width: 35%;
+	}
+
+	.homePage footer {
+		width: 35%;
+	}
+}
+@media (max-width: 720px) {
+	.homePage .header {
+		width: 40%;
+	}
+
+	.homePage footer {
+		width: 40%;
+	}
+}
+@media (max-width: 640px) {
+	.homePage .header {
+		width: 60%;
+	}
+
+	.homePage footer {
+		width: 60%;
+	}
+}
+@media (max-width: 380px) {
+	.homePage .header {
+		width: 70%;
+	}
+
+	.homePage .header .icon {
+		font-size: 16px;
+		color: #ffffff;
+	}
+
+	.homePage .header .iconBg {
+		width: 30px;
+		height: 30px;
+	}
+
+	.homePage .icon {
+		font-size: 16px;
+		color: #ffffff;
+	}
+	.navbarToggler {
+		width: 30px;
+		height: 30px;
+	}
+
+	.homePage li > a {
+		color: #a8a9b4;
+		font-size: 13px;
+		text-decoration: none;
+	}
+
+	.homePage footer {
+		width: 70%;
+	}
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HomePage.css";
 import profileImage from "../../Resources/img/profile-img.jpg";
 import { FiGithub } from "react-icons/fi";
@@ -19,12 +19,47 @@ import Resume from "../../Components/Sections/Resume/Resume";
 import Portfolio from "../../Components/Sections/Portfolio/Portfolio";
 import Services from "../../Components/Sections/Services/Services";
 import Contact from "../../Components/Sections/Contact/Contact";
+import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const HomePage = () => {
+	const [className, setClassName] = useState(false);
+	const [isActive, setIsActive] = useState(false);
+	const classToggler = (isActive) => {
+		setIsActive(!isActive);
+	};
+
+	useEffect(() => {
+		if (isActive) {
+			setClassName("active");
+		} else setClassName(" ");
+	}, [isActive]);
+
+	console.log(className);
 	return (
 		<div class="homePage">
 			<div className="body d-flex justify-content-between">
-				<div className="header  p-4">
+				{/* toggler icon */}
+				<div
+					className="navbarToggler d-flex align-items-center justify-content-center"
+					onClick={() => classToggler(isActive)}
+				>
+					{isActive ? (
+						<AiOutlineClose
+							className="icon"
+							data-aos="zoom-in"
+							data-aos-duration="400"
+						/>
+					) : (
+						<AiOutlineMenu
+							className="icon"
+							data-aos="zoom-in"
+							data-aos-duration="400"
+						/>
+					)}
+				</div>
+
+				<div className={"header  p-4 " + className}>
 					<header className=" flex-column align-items-center">
 						{/* Profile starts*/}
 
@@ -96,7 +131,7 @@ const HomePage = () => {
 						{/* Profile end*/}
 
 						{/* Nav bar starts */}
-						<div className="navigation">
+						<div className="navigation ">
 							<ScrollspyNav
 								scrollTargetIds={[
 									"home",
@@ -190,7 +225,7 @@ const HomePage = () => {
 						<Contact />
 					</section>
 				</div>
-				<footer>
+				<footer className={"footer " + className}>
 					<h5> &copy; Copyright iPortfolio</h5>
 					<h6>
 						{" "}
