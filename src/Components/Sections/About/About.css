@@ -44,10 +44,8 @@
 }
 
 .facts .factsIcon {
-	font-size: 44px;
+	font-size: 50px;
 	color: #149ddd;
-
-	line-height: 0;
 }
 .facts span {
 	display: inline-block;

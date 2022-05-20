@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.css";
+import "./Responsive.css";
 import profileImage from "../../Resources/img/profile-img.jpg";
 import { FiGithub } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
@@ -35,7 +36,6 @@ const HomePage = () => {
 		} else setClassName(" ");
 	}, [isActive]);
 
-	console.log(className);
 	return (
 		<div class="homePage">
 			<div className="body d-flex justify-content-between">
@@ -203,6 +203,7 @@ const HomePage = () => {
 						</div>
 					</header>
 				</div>
+
 				<div className="section" id="home">
 					<Home />
 

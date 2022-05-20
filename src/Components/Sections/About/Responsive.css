@@ -1,0 +1,162 @@
+/* media query for tablet*/
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+	.factsContainer {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+}
+@media (max-width: 600px) {
+	.aboutPage h2::after {
+		width: 15%;
+	}
+	.aboutPage h2 {
+		font-size: 28px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	.aboutPage p {
+		font-size: 16px;
+	}
+	.aboutPage img {
+		margin-bottom: 15px;
+	}
+	.aboutPage h3 {
+		font-size: 24px;
+	}
+	.aboutPage span {
+		font-size: 14px;
+	}
+	.about {
+		margin-bottom: 20px;
+	}
+	.facts span {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	.facts h5 {
+		font-size: 14px;
+	}
+	.facts h6 {
+		font-size: 12px;
+	}
+	.facts .factsIcon {
+		font-size: 50px;
+	}
+	.factsContainer {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.barContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.skills {
+		padding: 15px 0;
+	}
+}
+@media (max-width: 480px) {
+	.aboutPage h2::after {
+		width: 20%;
+	}
+	.aboutPage h2 {
+		font-size: 26px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	.aboutPage p {
+		font-size: 14px;
+	}
+	.aboutPage img {
+		margin-bottom: 15px;
+	}
+	.aboutPage h3 {
+		font-size: 22px;
+	}
+	.aboutPage span {
+		font-size: 14px;
+	}
+	.about {
+		margin-bottom: 20px;
+	}
+	.facts span {
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	.facts h5 {
+		font-size: 14px;
+	}
+	.facts h6 {
+		font-size: 12px;
+	}
+	.facts .factsIcon {
+		font-size: 50px;
+	}
+	.factsContainer {
+		margin-bottom: 15px;
+	}
+
+	.barContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.skills {
+		padding: 15px 0;
+	}
+}
+@media (max-width: 320px) {
+	.aboutPage h2::after {
+		width: 20%;
+	}
+	.aboutPage h2 {
+		font-size: 24px;
+		margin-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	.aboutPage p {
+		font-size: 12px;
+	}
+	.aboutPage img {
+		margin-bottom: 15px;
+	}
+	.aboutPage h3 {
+		font-size: 20px;
+	}
+	.aboutPage span {
+		font-size: 12px;
+	}
+	.about {
+		margin-bottom: 20px;
+	}
+	.facts span {
+		font-size: 38px;
+		margin-bottom: 10px;
+	}
+	.facts h5 {
+		font-size: 12px;
+	}
+	.facts h6 {
+		font-size: 10px;
+	}
+	.factsContainer {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.facts .factsIcon {
+		font-size: 50px;
+	}
+	.barContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.skills {
+		padding: 15px 0;
+	}
+}

@@ -1,0 +1,63 @@
+/* media query for tablet*/
+
+@media (max-width: 1200px) {
+	.home .bgContainer .textContainer {
+		padding-left: 8rem;
+	}
+	.home h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.home .bgContainer .textContainer {
+		padding-left: 10rem;
+	}
+	.home h1 {
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+	.home .bgContainer .textContainer {
+		padding-left: 4rem;
+	}
+	.home h1 {
+		font-size: 45px;
+	}
+}
+@media (max-width: 600px) {
+	.home .bgContainer .textContainer {
+		padding-left: 4rem;
+	}
+	.home h1 {
+		font-size: 40px;
+	}
+}
+@media (max-width: 480px) {
+	.home .bgContainer .textContainer {
+		padding-left: 2rem;
+	}
+	.home h1 {
+		font-size: 35px;
+	}
+}
+@media (max-width: 320px) {
+	.home .bgContainer .textContainer {
+		padding-left: 2rem;
+	}
+	.home h1 {
+		font-size: 35px;
+	}
+	.home .bgContainer {
+		background-position: center;
+	}
+	.home p {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.home .Typewriter__wrapper {
+		font-size: 22px;
+		text-underline-offset: 6px;
+	}
+}

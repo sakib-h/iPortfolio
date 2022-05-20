@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import image from "../../../Resources/img/profile-img.jpg";
 import "./About.css";
+import "./Responsive.css";
 import CountUp from "react-countup";
 import { BsHexagonHalf } from "react-icons/bs";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -24,9 +25,9 @@ const About = () => {
 					commodi quidem hic quas.{" "}
 				</p>
 
-				<div className="bioData d-flex align-items-center">
+				<div className="bioData row justify-content-center align-items-center">
 					<div
-						className="imageArea col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pe-2"
+						className="imageArea  -12  -sm-12  -md-4  -lg-4  -xl-4  -xxl-4 pe-2"
 						data-aos="fade-right"
 					>
 						<img
@@ -36,7 +37,7 @@ const About = () => {
 						/>
 					</div>
 					<div
-						className="infoArea col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ps-2"
+						className="infoArea  -12  -sm-12  -md-8  -lg-8  -xl-8  -xxl-8 ps-2"
 						data-aos="fade-left"
 					>
 						<h3>UI/UX Designer & Web Developer</h3>
@@ -49,56 +50,56 @@ const About = () => {
 							</i>{" "}
 						</p>
 						<div className="data row align-items-center">
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Birthday:</strong> 1 May 1995
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Age:</strong> 30
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Website:</strong> www.example.com
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Degree:</strong> Master
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Phone:</strong> +123 456 7890
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Email:</strong> email@email.com
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>City:</strong> New York, USA
 								</span>
 							</div>
-							<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4">
+							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
@@ -137,13 +138,14 @@ const About = () => {
 						<div>
 							{isVisible ? (
 								<div
-									className="factsArea row align-items-center"
+									className="factsArea row align-items-center justify-content-center"
 									data-aos="fade-up"
 								>
-									<div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center">
-										<div className="iconContainer pe-2">
-											<BsEmojiSmile className="factsIcon" />
+									<div className="factsContainer d-md-flex col-sm-6 col-md-3">
+										<div className="iconContainer   ">
+											<BsEmojiSmile className="factsIcon " />
 										</div>
+
 										<div className="textContainer">
 											<CountUp
 												start={0}
@@ -155,9 +157,9 @@ const About = () => {
 										</div>
 									</div>
 
-									<div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center">
-										<div className="iconContainer pe-2">
-											<BsJournalRichtext className="factsIcon" />
+									<div className="factsContainer d-md-flex col-sm-6 col-md-3">
+										<div className="iconContainer   ">
+											<BsJournalRichtext className="factsIcon " />
 										</div>
 										<div className="textContainer">
 											<CountUp
@@ -170,9 +172,10 @@ const About = () => {
 											<h6>adipisci atque cum quia aut</h6>
 										</div>
 									</div>
-									<div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center">
-										<div className="iconContainer pe-2">
-											<BiSupport className="factsIcon" />
+
+									<div className="factsContainer d-md-flex col-sm-6 col-md-3">
+										<div className="iconContainer">
+											<BiSupport className="factsIcon " />
 										</div>
 										<div className="textContainer">
 											<CountUp
@@ -184,11 +187,12 @@ const About = () => {
 											<h6>aut commodi quaerat </h6>
 										</div>
 									</div>
-									<div className="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 d-flex justify-content-center">
-										<div className="iconContainer pe-2">
-											<BsPeople className="factsIcon" />
+
+									<div className="factsContainer d-md-flex col-sm-6 col-md-3">
+										<div className="iconContainer  ">
+											<BsPeople className="factsIcon " />
 										</div>
-										<div className="textContainer">
+										<div className="textContainer  ">
 											<CountUp
 												start={0}
 												end={32}
@@ -224,11 +228,11 @@ const About = () => {
 							<div>
 								{isVisible ? (
 									<div
-										className="skillBar row align-items-center"
+										className="skillBar row align-items-center p-3"
 										data-aos="zoom-in-right"
 									>
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 pe-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>HTML</small>
 													<small>90%</small>
@@ -241,8 +245,8 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 ps-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>CSS</small>
 													<small>85%</small>
@@ -256,8 +260,8 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 pe-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>BOOTSTRAP</small>
 													<small>82%</small>
@@ -270,8 +274,8 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 ps-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>JAVA SCRIPT</small>
 													<small>75%</small>
@@ -285,8 +289,8 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 pe-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>REACT JS</small>
 													<small>90%</small>
@@ -299,8 +303,8 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 ps-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>NODE JS</small>
 													<small>70%</small>
@@ -314,8 +318,8 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 pe-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>PHOTOSHOP</small>
 													<small>80%</small>
@@ -328,8 +332,8 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-l col-xxl-6 mb-4 ps-3">
-											<div className="flex-column">
+										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>ILLUSTRATOR</small>
 													<small>90%</small>

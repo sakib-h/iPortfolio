@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import "./Responsive.css";
 import { BsBriefcase } from "react-icons/bs";
 import { BsCardChecklist } from "react-icons/bs";
 import { BsBinoculars } from "react-icons/bs";
@@ -130,10 +131,24 @@ const Services = () => {
 						pagination={{
 							clickable: true,
 						}}
+						breakpoints={{
+							200: {
+								slidesPerView: 1,
+								spaceBetween: 30,
+							},
+							768: {
+								slidesPerView: 2,
+								spaceBetween: 20,
+							},
+							1024: {
+								slidesPerView: 3,
+								spaceBetween: 30,
+							},
+						}}
 						autoplay={{ delay: 3000 }}
 						modules={[Pagination, Autoplay]}
 						className="mySwiper"
-						loop={true}
+						// loop={true}
 						grabCursor={true}
 						speed={800}
 					>

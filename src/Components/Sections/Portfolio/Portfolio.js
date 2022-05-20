@@ -1,5 +1,6 @@
 import React from "react";
 import "./Portfolio.css";
+import "./Responsive.css";
 import image1 from "../../../Resources/img/portfolio/portfolio-1.jpg";
 import image2 from "../../../Resources/img/portfolio/portfolio-2.jpg";
 import image3 from "../../../Resources/img/portfolio/portfolio-3.jpg";
@@ -211,7 +212,6 @@ const Portfolio = () => {
 							<div className="cardsArea row animate__animated animate__zoomIn">
 								{appDesigns.map((appDesign) => (
 									<Apps
-										
 										appDesign={appDesign}
 										appDesigns={appDesigns}
 									/>
