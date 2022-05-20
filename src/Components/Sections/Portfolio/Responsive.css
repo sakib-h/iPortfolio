@@ -1,6 +1,6 @@
 /* media query for tablet*/
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
 }
 
 @media (max-width: 1024px) {
@@ -9,7 +9,7 @@
 @media (max-width: 768px) {
 }
 @media (max-width: 600px) {
-}
+} */
 @media (max-width: 480px) {
 	.portfolio .nav li {
 		padding: 0;
