@@ -27,17 +27,17 @@ const About = () => {
 
 				<div className="bioData row justify-content-center align-items-center">
 					<div
-						className="imageArea  -12  -sm-12  -md-4  -lg-4  -xl-4  -xxl-4 pe-2"
+						className="imageArea  col-12  colcol-sm-12  col-md-4  col-lg-4  col-xl-4  col-xxl-4 pe-2"
 						data-aos="fade-right"
 					>
 						<img
 							src={image}
-							alt="sakib hasan"
+							alt="Sakib Hasan"
 							className="img-fluid"
 						/>
 					</div>
 					<div
-						className="infoArea  -12  -sm-12  -md-8  -lg-8  -xl-8  -xxl-8 ps-2"
+						className="infoArea  col-12  colcol-sm-12  col-md-8  col-lg-8  col-xl-8  col-xxl-8 ps-2"
 						data-aos="fade-left"
 					>
 						<h3>UI/UX Designer & Web Developer</h3>
@@ -50,56 +50,56 @@ const About = () => {
 							</i>{" "}
 						</p>
 						<div className="data row align-items-center">
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Birthday:</strong> 1 May 1995
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Age:</strong> 30
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Website:</strong> www.example.com
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Degree:</strong> Master
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Phone:</strong> +123 456 7890
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>Email:</strong> email@email.com
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
 									<strong>City:</strong> New York, USA
 								</span>
 							</div>
-							<div className=" -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+							<div className="col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 								<BsHexagonHalf className="icon" />
 								<span>
 									{" "}
@@ -231,7 +231,7 @@ const About = () => {
 										className="skillBar row align-items-center p-3"
 										data-aos="zoom-in-right"
 									>
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>HTML</small>
@@ -245,7 +245,7 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>CSS</small>
@@ -260,7 +260,7 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>BOOTSTRAP</small>
@@ -274,7 +274,7 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>JAVA SCRIPT</small>
@@ -289,7 +289,7 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>REACT JS</small>
@@ -303,7 +303,7 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>NODE JS</small>
@@ -318,7 +318,7 @@ const About = () => {
 											</div>
 										</div>
 
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>PHOTOSHOP</small>
@@ -332,7 +332,7 @@ const About = () => {
 												</div>
 											</div>
 										</div>
-										<div className="barContainer  -12  -sm-12  -md-6  -lg-6  -xl-l  -xxl-6 mb-4 ">
+										<div className="barContainer col-12  col-sm-12  col-md-6  col-lg-6  col-xl-6  col-xxl-6 mb-4 ">
 											<div className="flex- umn">
 												<div className="text d-flex justify-content-between">
 													<small>ILLUSTRATOR</small>
