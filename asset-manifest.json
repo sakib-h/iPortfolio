@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/iPortfolio/static/css/main.4679fd21.css",
+    "main.js": "/iPortfolio/static/js/main.17a9b5a1.js",
+    "static/media/hero-bg.jpg": "/iPortfolio/static/media/hero-bg.d4e4dfc41568f51250f8.jpg",
+    "static/media/portfolio-details-2.jpg": "/iPortfolio/static/media/portfolio-details-2.c121dde6bee8907d77cc.jpg",
+    "static/media/portfolio-details-1.jpg": "/iPortfolio/static/media/portfolio-details-1.a20082bacf380393d942.jpg",
+    "static/media/portfolio-7.jpg": "/iPortfolio/static/media/portfolio-7.14e52d8ae327742d1f60.jpg",
+    "static/media/portfolio-5.jpg": "/iPortfolio/static/media/portfolio-5.2dcd6723c4f2067cb10a.jpg",
+    "static/media/profile-img.jpg": "/iPortfolio/static/media/profile-img.23977f23f4ed53b4fdad.jpg",
+    "static/media/portfolio-details-3.jpg": "/iPortfolio/static/media/portfolio-details-3.115fe3ee2691e4738d7b.jpg",
+    "static/media/portfolio-9.jpg": "/iPortfolio/static/media/portfolio-9.561bb1f26fc76bc36f6c.jpg",
+    "static/media/testimonials-2.jpg": "/iPortfolio/static/media/testimonials-2.4b41e5c09698f7f4f9f9.jpg",
+    "static/media/testimonials-1.jpg": "/iPortfolio/static/media/testimonials-1.54f2a70e2804cdf6f09d.jpg",
+    "static/media/portfolio-4.jpg": "/iPortfolio/static/media/portfolio-4.e99517ec0fc1bb0d2c71.jpg",
+    "static/media/portfolio-2.jpg": "/iPortfolio/static/media/portfolio-2.bb58c28684dd06cca3b7.jpg",
+    "static/media/portfolio-6.jpg": "/iPortfolio/static/media/portfolio-6.c6b9e1909c9c64775807.jpg",
+    "static/media/testimonials-5.jpg": "/iPortfolio/static/media/testimonials-5.8732aa377888dc5873fb.jpg",
+    "static/media/testimonials-4.jpg": "/iPortfolio/static/media/testimonials-4.58081dc8c31bc0e1cb6c.jpg",
+    "static/media/testimonials-3.jpg": "/iPortfolio/static/media/testimonials-3.bec51ce16f238c7ec7b1.jpg",
+    "static/media/portfolio-1.jpg": "/iPortfolio/static/media/portfolio-1.88a9e07439d191812e5f.jpg",
+    "static/media/portfolio-8.jpg": "/iPortfolio/static/media/portfolio-8.0d2f076b80c33a7e0269.jpg",
+    "static/media/portfolio-3.jpg": "/iPortfolio/static/media/portfolio-3.80ecc9ef01cdf62dda3d.jpg",
+    "index.html": "/iPortfolio/index.html",
+    "main.4679fd21.css.map": "/iPortfolio/static/css/main.4679fd21.css.map",
+    "main.17a9b5a1.js.map": "/iPortfolio/static/js/main.17a9b5a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4679fd21.css",
+    "static/js/main.17a9b5a1.js"
+  ]
+}
