@@ -22,10 +22,30 @@ import Services from "../../Components/Sections/Services/Services";
 import Contact from "../../Components/Sections/Contact/Contact";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const HomePage = () => {
 	const [className, setClassName] = useState(false);
 	const [isActive, setIsActive] = useState(false);
+	const [showTopBtn, setShowTopBtn] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 400) {
+				setShowTopBtn(true);
+			} else {
+				setShowTopBtn(false);
+			}
+		});
+	}, []);
+
+	const goToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
 	const classToggler = (isActive) => {
 		setIsActive(!isActive);
 	};
@@ -205,6 +225,19 @@ const HomePage = () => {
 				</div>
 
 				<div className="section" id="home">
+					<div className="top-to-btm">
+						{" "}
+						{showTopBtn && (
+							<div
+								className="clickToTop d-flex justify-content-center align-items-center"
+								onClick={goToTop}
+								data-aos="zoom-out-left"
+							>
+								<AiOutlineArrowUp className="clickToTopIcon" />
+							</div>
+						)}{" "}
+					</div>
+
 					<Home />
 
 					<section
